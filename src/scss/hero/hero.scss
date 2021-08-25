@@ -1,0 +1,100 @@
+.hero {
+  background: url('https://picsum.photos/seed/113/2000/2000');
+  background-size: cover;
+  background-position: center center;
+  padding: 10px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  text-align: center;
+  position: relative;
+  
+  &:before {
+    display: block;
+    content: '';
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.3);
+    position: absolute;
+  }
+
+  &__top {
+    @include container;
+    display: flex;
+    position: relative;
+    padding-top: 20px;
+  }
+
+  &__content {
+    @include container;
+    position: relative;
+    margin: auto;
+  }
+
+  &__logo {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+
+    img {
+      width: 50px;
+      margin-right: 5px;
+    }
+  }
+
+  &__admin {
+    margin-left: auto;
+
+    a {
+      display: block;
+      padding: 10px;
+      border-radius: 4px;
+      background: $dark-blue;
+      transition: 0.2s all;
+
+      &:hover {
+        background: lighten($dark-blue, 10%);
+      }
+    }
+  }
+
+  &__logo-uptext {
+    text-transform: uppercase;
+    font-size: 8px;
+    color: #fff;
+  }
+
+  &__logo-subtext {
+    font-size: 20px;
+    color: #fff;
+    font-weight: 700;
+  }
+
+  &__title {
+    font-size: 50px;
+  }
+
+  &__subtitle {
+    font-size: 30px;
+    margin-top: 30px;
+  }
+
+  &__more {
+    margin-top: 20px;
+    a {
+      border-radius: 5px;
+      padding: 10px;
+      background: $pink;
+      display: inline-block;
+      margin-top: 30px;
+      transition: 0.2s;
+
+      &:hover {
+        background: darken($pink, 10%);
+      }
+    }
+  }
+}
