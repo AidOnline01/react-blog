@@ -1,11 +1,17 @@
-import {BrowserRouter as Router} from 'react-router-dom';
-import MainLayout from '@/layouts/MainLayout';
+import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
+import loadable from '@loadable/component';
 import '@/scss/core';
+
+const MainLayout = loadable(() => import('@/layouts/MainLayout'));
+const AdminLayout = loadable(() => import('@/layouts/AdminLayout'));
 
 function App() {
   return (
     <Router>
-      <MainLayout />
+      <Switch>
+        <Route path="/admin"><AdminLayout/></Route>
+        <Route><MainLayout /></Route>
+      </Switch>
     </Router>
   );
 }

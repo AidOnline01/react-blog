@@ -1,14 +1,14 @@
-import '@/scss/hero';
+import '@/scss/modules/hero.scss';
 import {Link} from 'react-router-dom';
 
 export default function Hero(props) {
   return <div className="hero">
     <div className="hero__top">
-      <div class="hero__logo">
+      <div className="hero__logo">
         <img src="/images/header/logo.png" alt="" />
-        <div class="hero__logo-info">
-          <div class="hero__logo-uptext">quality</div>
-          <div class="hero__logo-subtext">ITDevv</div>
+        <div className="hero__logo-info">
+          <div className="hero__logo-uptext">quality</div>
+          <div className="hero__logo-subtext">ITDevv</div>
         </div>
       </div>
 

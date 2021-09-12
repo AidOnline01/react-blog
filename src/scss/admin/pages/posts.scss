@@ -1,0 +1,29 @@
+.posts {
+  padding: 10px;
+  
+  &__preview {
+    width: 60px;
+    height: 60px;
+    margin: 10px;
+    background-size: cover;
+    background-position: center center;
+    border-radius: 100%;
+  }
+
+  &__title {
+    padding: 10px 0;
+    display: block;
+  }
+
+  &__actions {
+    display: flex;
+  }
+
+  &__delete {
+    background: $pink;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+}
