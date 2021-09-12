@@ -13,6 +13,7 @@ export const generatePosts = () => {
 
     post.id = lastId + i;
     post.title = faker.lorem.sentence();
+    post.short = faker.lorem.paragraph();
     post.image = `https://picsum.photos/seed/${faker.datatype.number()}/1000/600`;
     post.content = faker.lorem.paragraphs();
 

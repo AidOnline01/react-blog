@@ -3,8 +3,8 @@ import {Route, Switch} from 'react-router-dom';
 import {ToastContainer} from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
-import PostsPage from '@/pages/admin/PostsPage';
-import PostPage from '@/pages/admin/PostPage';
+import AdminPostsPage from '@/pages/admin/AdminPostsPage';
+import AdminPostPage from '@/pages/admin/AdminPostPage';
 import Header from '@/components/admin/Header';
 
 export default function AdminLayout(props) {
@@ -13,8 +13,8 @@ export default function AdminLayout(props) {
     
     <div className="admin__content">
       <Switch>
-        <Route exact path="/admin"><PostsPage /></Route>
-        <Route exact path="/admin/posts/:id"><PostPage /></Route>
+        <Route exact path="/admin"><AdminPostsPage /></Route>
+        <Route exact path="/admin/posts/:id"><AdminPostPage /></Route>
       </Switch>
     </div>
 

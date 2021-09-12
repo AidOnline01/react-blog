@@ -1,0 +1,19 @@
+.blog-post {
+  color: #555;
+
+  &__image {
+    padding-bottom: 50%;
+    background-size: cover;
+    background-position: center center;
+    border-radius: 10px;
+  }
+
+  &__title {
+    font-weight: 700;
+    padding: 10px 0;
+    display: block;
+  }
+
+  &__short {
+  }
+}

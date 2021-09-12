@@ -45,6 +45,18 @@
     }
   }
 
+  &__logo-uptext {
+    text-transform: uppercase;
+    font-size: 8px;
+    color: #fff;
+  }
+
+  &__logo-subtext {
+    font-size: 20px;
+    color: #fff;
+    font-weight: 700;
+  }
+
   &__admin {
     margin-left: auto;
 
@@ -59,18 +71,6 @@
         background: lighten($dark-blue, 10%);
       }
     }
-  }
-
-  &__logo-uptext {
-    text-transform: uppercase;
-    font-size: 8px;
-    color: #fff;
-  }
-
-  &__logo-subtext {
-    font-size: 20px;
-    color: #fff;
-    font-weight: 700;
   }
 
   &__title {

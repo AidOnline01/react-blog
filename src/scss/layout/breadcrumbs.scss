@@ -1,0 +1,15 @@
+.breadcrumbs {
+  a {
+    color: $dark;
+  }
+
+  &__items {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: -5px;
+  }
+
+  &__item {
+    margin-bottom: 5px;
+  }
+}
